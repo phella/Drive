@@ -22,13 +22,13 @@ File storage project using distriputed systems where replicas of same file is st
  - Keeper: stores file in machiine file system, many threads are ran with different sockets to increase system throughput.
  - dummyclient: upload file to another datakeeper.
   run Keeper using: 
-   ```python
+  ```python
   python keeper/build.py {id}
   ```
 ### Client processes:
 - Client: uploads and downloads file.
 run client using: 
- ```python
+```python
 python client/build.py donwload/upload {filename}
 ```
 
